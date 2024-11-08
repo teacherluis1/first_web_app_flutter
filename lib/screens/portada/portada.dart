@@ -19,10 +19,10 @@ class Portada extends StatelessWidget {
           color: Colors.blue.withOpacity(0.3),        
         ),
         Positioned(
-          top: 40,
-          left: 25,
+          top: 5,
+          left: -100,
           child: Image.asset("assets/logo_tra.png",
-          width: 400,
+          width: 500,
           ),
           ),
 

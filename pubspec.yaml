@@ -63,6 +63,11 @@ flutter:
   assets:
   - assets/students1.jpg
   - assets/logo_tra.png
+  - assets/imagen1.jpg
+  - assets/imagen2.jpg
+  - assets/imagen3.jpg
+  - assets/imagen4.jpg
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

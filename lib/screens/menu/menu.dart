@@ -25,6 +25,7 @@ class Menu extends StatelessWidget {
     return Scaffold(
       
       appBar: AppBar(
+        toolbarHeight: 80,
         backgroundColor: Colors.blue,
         
         title: Row(
@@ -39,7 +40,7 @@ class Menu extends StatelessWidget {
             },
             child: const Text("Portada",
             style: TextStyle(color: Colors.white,
-            fontSize: 20),
+            fontSize: 25),
             ),),
 
             TextButton(onPressed: (){
@@ -50,7 +51,7 @@ class Menu extends StatelessWidget {
             }, 
             child: const Text("Institución", 
             style: TextStyle(color: Colors.white,
-            fontSize: 20),),),
+            fontSize: 25),),),
 
             TextButton(onPressed: (){
                   Navigator.push(
@@ -61,7 +62,7 @@ class Menu extends StatelessWidget {
             child: const Text("Docentes",
             style: TextStyle(
               color: Colors.white,
-              fontSize: 20
+              fontSize: 25
             ), ),),
 
             
@@ -72,9 +73,9 @@ class Menu extends StatelessWidget {
       MaterialPageRoute(builder: (context) => const Areastecnicas()), 
     );
             },
-            child: const Text("Áreas Técnicas",
+            child: const Text("Áreas técnicas",
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 25,
               color: Colors.white
             ),),),
 
@@ -86,7 +87,7 @@ class Menu extends StatelessWidget {
 
             }, child: const Text("Contáctanos",
             style: TextStyle(
-              fontSize: 20,
+              fontSize: 25,
               color: Colors.white
             ),
             ),
@@ -95,12 +96,14 @@ class Menu extends StatelessWidget {
           
         ),
         actions: [
+          
+          
           IconButton(onPressed: (){
             _launchURL('https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA');
           },
           icon: const Icon(Icons.facebook),
           color: Colors.white,
-          iconSize: 30),
+          iconSize: 45),
 
 
 
@@ -109,7 +112,7 @@ class Menu extends StatelessWidget {
           }, 
           icon: const FaIcon(FontAwesomeIcons.instagram), 
           color: Colors.white,
-          iconSize: 30,
+          iconSize: 40,
           ),
 
 
@@ -120,8 +123,9 @@ class Menu extends StatelessWidget {
             _launchURL('https://www.youtube.com/watch?v=OK_b2-w0u60');
           }, icon: const FaIcon(FontAwesomeIcons.youtube),
           color: Colors.white,
-          iconSize: 30,
+          iconSize: 40,
           ),
+          SizedBox(width: 20),
         ],      
 
       ),

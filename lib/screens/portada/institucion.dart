@@ -6,69 +6,228 @@ class Institucion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      
-      
-      child: Column(
-                
-        crossAxisAlignment: CrossAxisAlignment.center,
-      
-        
-      
-        children: [
-          const SizedBox(height: 150),
-          const Text("Acerca de Nosotros",
-          style: TextStyle(
-            color: Colors.grey,
-            fontWeight: FontWeight.bold,
-            fontSize: 50
-          ),
-          ),
-          const SizedBox(height: 50),
-      
-          Row(
-            
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            
-            children: [
-              Column(
-                children: [
-                  Flexible(child: Container(
-                    color: Colors.blue,
-                    height: 100,
-                    
-                  
-                    
+    return Column(    
 
+      children: [
+        Container(
+          alignment: Alignment.center,
+          
+
+          color: Colors.lightBlue,
+          height: 300,
+          width: double.infinity,           
+          child: Text("Institución",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 50,
+
+          ),
+          ),
+          ),
+          
+
+          Expanded(
+            
+            child: Container(
+              
+              
+              
+              color: Colors.white,
+              width: double.infinity,
+              
+              child: Row(mainAxisAlignment: MainAxisAlignment.center,
+              
+              
+                children: [
+                  Column(mainAxisAlignment: MainAxisAlignment.center,
+                    
+                    
+                    children: [
+                      Text("Misión",
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontFamily: "Roboto",
+                      
+                        color: Colors.blueGrey,
+                      ),
+                      ),
+                      SizedBox(height: 30),
+                      Container(    
+                        padding: EdgeInsets.all(15),              
+                                     
+                        width: 275,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          color: Colors.lightBlue,
+                          borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(50),
+                                  bottomLeft: Radius.circular(50),
+                                  bottomRight: Radius.circular(20),
+                          
+                          ),
+                      
+                        ),
+                        child: Text(" Ser una institución técnica profesional que responda a las necesidades con equidad, eficiencia y eficacia de los jóvenes de la comunidad educativa incorporando a la sociedad un individuo capaz de desarrollarse en la sociedad, vida social, cultural y económica.",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                          
+                          fontFamily: "Roboto",
+                          letterSpacing: 0.5,
+                          
+                        ),
+                        
+                        textAlign: TextAlign.justify,
+                        ),
+                        
+                        
+                        
+                      
+                      ),
+                    ],
                   ),
+                  SizedBox(width: 30),
+
+
+
+                
+
+                  Column(mainAxisAlignment: MainAxisAlignment.center,
+                    
+                    
+                    children: [
+                      Text("Visión",
+                      style: TextStyle(
+                        fontSize: 40,
+                        fontFamily: "Roboto",
+                        
+                        color: Colors.blueGrey,
+                      ),
+                      ),
+                      SizedBox(height: 30),
+                      Container(    
+                        padding: EdgeInsets.all(15),              
+                                     
+                        width: 275,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          color: Colors.lightBlue,
+                          borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(50),
+                                  bottomLeft: Radius.circular(50),
+                                  bottomRight: Radius.circular(20),
+                          
+                          ),
+                      
+                        ),
+                        child: Text(" Ser una institución técnica profesional que responda a las necesidades con equidad, eficiencia y eficacia de los jóvenes de la comunidad educativa incorporando a la sociedad un individuo capaz de desarrollarse en la sociedad, vida social, cultural y económica.",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,                          
+                          fontFamily: "Roboto",
+                          letterSpacing: 0.5,
+                          
+                        ),
+                        
+                        textAlign: TextAlign.justify,
+                        ),
+                        
+
+                        
+                      
+                      ),
+                    ],
                   ),
-                             
+                 SizedBox(width: 30),
+
+
+
+
+                  Column(mainAxisAlignment: MainAxisAlignment.center,
+                    
+                    
+                    children: [
+                      Text("Valores",
+                      style: TextStyle(
+                        fontSize: 45,
+                        
+                        fontFamily: "Roboto",
+                        color: Colors.blueGrey,
+                      ),
+                      ),
+                      SizedBox(height: 30),
+                      Container(    
+                        padding: EdgeInsets.all(15),              
+                                     
+                        width: 275,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          color: Colors.lightBlue,
+                          borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20),
+                                  topRight: Radius.circular(50),
+                                  bottomLeft: Radius.circular(50),
+                                  bottomRight: Radius.circular(20),
+                          
+                          ),
+                      
+                        ),
+                        child: Text(" Ser una institución técnica profesional que responda a las necesidades con equidad, eficiencia y eficacia de los jóvenes de la comunidad educativa incorporando a la sociedad un individuo capaz de desarrollarse en la sociedad, vida social, cultural y económica.",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Roboto",
+                          letterSpacing: 0.5,
+                          
+                        ),
+                        
+                        textAlign: TextAlign.justify,
+                        ),
+                        
+                        
+                        
+                      
+                      ),
+                    ],
+                  ),
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+               
                 ],
               ),
-              const SizedBox(width: 150),
-              const Text("Visión",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 30
-              ),
-              ),    
-              const SizedBox(width: 150),      
-              const Text("Valores",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 30
-              ),
-              ), 
-              
-      
-            ],
+            ),
           )
-      
-      
-          
-        ],
-      
-      ),
+
+
+        
+
+
+
+    
+        
+      ],
+    
     );
   }
 }
